@@ -5,12 +5,22 @@
     --font-family0: "Montserrat";
     --font-family1: "Roboto";
 
-    --gray0: rgb(200, 200, 200);
-    
+    --gray0: rgb(220, 220, 220);
+    --gray1: rgb(210, 210, 210);
+    --gray2: rgb(200, 200, 200);
+    --gray3: rgb(150, 150, 150);
+
     --cyan0: #00b1ff;
     --cyan1: #009de6;
-    
+
     --transition-duration0: 0.2s;
+    
+    --depth: 4px;
+    
+    --padding: 8px;
+    
+    --border-radius: 10px;
+    --border-width: 2px;
 }
 
 * {
@@ -21,26 +31,49 @@
     outline: none;
 }
 
+body {
+    background-color: red;
+}
+
 /*Generic Box*/
 button {
-    border: solid 2px var(--gray0);
-    border-radius: 6px;
-    padding: 6px;
-    box-shadow: 0 2px 0 var(--gray0);
+    border: solid var(--border-width) var(--gray0);
+    border-radius: var(--border-radius);
+    padding: var(--padding);
+    box-shadow: 0 var(--depth) 0 var(--gray1);
+    margin-bottom: var(--depth);
 }
 
 button {
     background-color: white;
     font-weight: bold;
     cursor: pointer;
-    margin-top: 0;
-    margin-bottom: 2px;
     transition-duration: var(--transition-duration0);
 }
 
 button:active {
-    margin-top: 2px;
-    margin-bottom: 0;
-    box-shadow: 0 0px 0 var(--gray0);
+    box-shadow: 0 0 0 var(--gray1);
+    transform: translateY(var(--depth));
     transition-duration: var(--transition-duration0);
+}
+
+a, p, b, i, strong {
+    font-size: 16px;
+}
+
+a[href] {
+    font-weight: bold;
+    color: var(--cyan0);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a[target="_blank"]:after {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: red;
+    background-image: url(/assets/icons/newTab.png);
+    background-size: 16px;
 }
