@@ -1,0 +1,1 @@
+button{cursor:pointer}button.clean{background:0;border:0;padding:0}input{border-radius:var(--border-radius);height:30px;cursor:text;font-size:var(--font-size-normal);font-weight:bold;padding:0 10px 0 10px}input.clean{background:0;border:0}input.translucent{background-color:var(--dark-blue-translucent0);border:1px solid var(--dark-blue7);color:white}input.borderless{border:0}

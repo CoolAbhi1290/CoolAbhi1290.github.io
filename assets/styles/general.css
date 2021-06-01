@@ -1,0 +1,11 @@
+* {
+    transition-duration: var(--transition-duration0);
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    margin: 40px 0px 0px 0px;
+}

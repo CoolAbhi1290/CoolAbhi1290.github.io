@@ -1,0 +1,11 @@
+* {
+    font-family: var(--font-family0);
+}
+
+p, a, i, b {
+    font-size: var(--font-size-normal);
+}
+
+TEMP /* codeblock or something */ {
+    font-family: var(--font-family1);
+}

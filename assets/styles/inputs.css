@@ -1,0 +1,33 @@
+button {
+    cursor: pointer;
+}
+
+button.clean {
+    background: none;
+    border: none;
+    padding: 0px;
+}
+
+input {
+    border-radius: var(--border-radius);
+    height: 30px; /* 32 (font-size + 20) - 1px border (two of 'em) */
+    cursor: text;
+    font-size: var(--font-size-normal);
+    font-weight: bold;
+    padding: 0px 10px 0px 10px;
+}
+
+input.clean {
+    background: none;
+    border: none;
+}
+
+input.translucent {
+    background-color: var(--dark-blue-translucent0);
+    border: 1px solid var(--dark-blue7);
+    color: white;
+}
+
+input.borderless {
+    border: none;
+}
