@@ -4,6 +4,7 @@
 
 *:focus {
     outline: none;
+    scroll-behavior: smooth;
 }
 
 body {

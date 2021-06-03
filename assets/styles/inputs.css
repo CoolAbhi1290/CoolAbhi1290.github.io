@@ -1,4 +1,7 @@
-button {
+button,
+input[type="button"],
+input[type="submit"],
+input[type="image"] {
     cursor: pointer;
 }
 
@@ -9,12 +12,15 @@ button.clean {
 }
 
 input {
+    margin: 0px;
     border-radius: var(--border-radius);
-    height: 30px; /* 32 (font-size + 20) - 1px border (two of 'em) */
+    height: 30px;
+    /* 32 (font-size + 20) - 1px border (two of 'em) */
     cursor: text;
     font-size: var(--font-size-normal);
     font-weight: bold;
     padding: 0px 10px 0px 10px;
+    font-weight: bold;
 }
 
 input.clean {

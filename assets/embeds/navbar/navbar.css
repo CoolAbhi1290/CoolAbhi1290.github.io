@@ -2,17 +2,19 @@
 
 body {
     margin: 0px;
+    overflow: hidden;
 }
 
 #nav-bar-main-header {
     background: linear-gradient(45deg, var(--blue0), var(--cyan0));
     height: 40px;
+    display: flex;
+    flex-direction: row;
 }
 
 #nav-bar-left-align {
     float: left;
-    height: 30px;
-    margin-top: 5px;
+    height: 100%;
     margin-left: 5px;
     display: flex;
     align-items: center;
@@ -21,16 +23,31 @@ body {
 
 #nav-bar-right-align {
     float: right;
-    height: 30px;
-    margin-top: 5px;
+    height: 100%;
     margin-right: 10px;
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
 }
 
+#nav-bar-middle-align {
+    background-color: red;
+    width: 10px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+#center-links {
+    margin: auto;
+    display: block;
+    width: 100px;
+    height: 100%;
+}
+
 #logo-link {
     z-index: 1;
+    padding-right: 5px;
 }
 
 #logo-link-image {
@@ -39,33 +56,54 @@ body {
 
 #logo-text {
     color: white;
-    padding-left: 10px;
     font-weight: bold;
-    transform: translateX(-25px);
     opacity: 0;
+    padding: 0px;
+    font-size: 0px;
 }
 
-#logo-link:hover ~ #logo-text, #logo-text:hover {
-    transform: translateX(0);
+#logo-link:hover ~ #logo-text,
+#logo-text:hover {
+    font-size: 14px;
+    margin-left: 0px;
+    transform: scale(1);
     opacity: 1;
-    
+    padding: 5px 10px 5px 5px;
 }
 
-#search-button{    
-    width: 20px;
-}
-
-#search-button-image {
-    width: 20px;
+#search-button {
+    height: 20px;
+    margin: 0px;
+    padding: 0px 0px 0px 10px;
 }
 
 #search-box {
-    margin-right: 10px;
+    background-color: var(--dark-blue-translucent0);
+    display: none;
     width: 0px;
     padding: 0px;
+    margin-left: 0px;
+    color: white;
 }
 
-#search-button:focus ~ #search-box, #search-box:focus {
+#search-button-link:hover ~ #search-box,
+#search-button-link:focus ~ #search-box,
+#search-button-link:focus-within ~ #search-box,
+#search-box:hover,
+#search-box:focus,
+#search-box:focus-within {
     width: 160px;
+    margin-left: 10px;
     padding: 10px;
 }
+
+.main-links {
+    display: block;
+}
+
+.main-links div {
+    display: inline-block;
+    height: 40px;
+}
+
+#center-links, #center-link-icons {}

@@ -1,6 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="navbar.min.css">
+        <script src="navbar.min.js"></script>
         <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' >
     </head>
     <body>
@@ -11,11 +12,23 @@
                 </a>
                 <a target="_parent" href="/" id="logo-text">CoolAbhi1290</a>
             </div>
+            <div id="nav-bar-middle-align">
+                <div id="center-links">
+                    <a class="main-links white" href="/projects/">
+                        <div>
+                            Projects
+                        </div>
+                    </a>
+                </div>
+                <div id="center-link-icons">
+                    <div></div>
+                </div>
+            </div>
             <div id="nav-bar-right-align">
-                <button class="clean" id="search-button">
-                    <img id="search-button-image" src="/assets/icons/search-white.png">
-                </button>
-                <input id="search-box" class="translucent borderless">
+                <a target="_parent" href="/search/" id="search-button-link">
+                    <input type="image" class="clean" id="search-button" src="/assets/icons/search-white.png">
+                </a>
+                <input type="text" class="clean" id="search-box">
             </div>
         </header>
     </body>
