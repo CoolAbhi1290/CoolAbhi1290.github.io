@@ -17,10 +17,15 @@ input {
     height: 30px;
     /* 32 (font-size + 20) - 1px border (two of 'em) */
     cursor: text;
-    font-size: var(--font-size-normal);
+    font-size: var(--font-size1);
     font-weight: bold;
     padding: 0px 10px 0px 10px;
     font-weight: bold;
+}
+
+input::placeholder {
+    font-weight: lighter;
+    color: white;
 }
 
 input.clean {
@@ -29,7 +34,7 @@ input.clean {
 }
 
 input.translucent {
-    background-color: var(--dark-blue-translucent0);
+    background-color: var(--dark-blue0-translucent0);
     border: 1px solid var(--dark-blue7);
     color: white;
 }
