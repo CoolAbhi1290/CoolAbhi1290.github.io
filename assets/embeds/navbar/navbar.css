@@ -1,4 +1,5 @@
 @import url("/assets/styles/server.min.css");
+
 body {
     margin: 0px;
     overflow: hidden;
@@ -9,8 +10,7 @@ body {
     display: flex;
     align-content: center;
     justify-content: center;
-    filter: var(--shadow0);
-    border-radius: 0px 0px var(--border-radius) var(--border-radius);
+    box-shadow: var(--box-shadow0);
 }
 
 #nav-bar-width {
@@ -101,21 +101,6 @@ body {
     justify-content: center;
 }
 
-@media (max-width: 400px) {
-    #nav-bar-middle-align > * {
-        display: none;
-    }
-}
-
-.clickable-main-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    height: 40px;
-    box-sizing: border-box;
-}
-
 .clickable-main-link-icon {
     width: 20px;
 }
@@ -124,11 +109,13 @@ body {
     transform: translateY(2px);
 }
 
-.clickable-main-link:hover > .clickable-main-link-text {
-    font-size: var(--font-size1);
-    opacity: 1;
-    transform: translateX(0px);
-    margin-left: 5px;
+@media (min-width: 400px) {
+    .clickable-main-link:hover > .clickable-main-link-text {
+        font-size: var(--font-size1);
+        opacity: 1;
+        transform: translateX(0px);
+        margin-left: 5px;
+    }
 }
 
 .clickable-main-link.main-link-selected:hover > .clickable-main-link-text {
@@ -143,10 +130,24 @@ body {
     border-bottom: 4px var(--off-white1) solid;
 }
 
-.clickable-main-link-text {
+.clickable-main-link-text,
+.clickable-main-link:focus-within > .clickable-main-link-text {
     font-size: 0px;
     color: white;
     opacity: 0;
     transform: translateX(-20px) translateY(2px);
     margin-left: 0px;
+}
+
+.clickable-main-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.clickable-main-link:focus-within {
+    background: none;
 }
