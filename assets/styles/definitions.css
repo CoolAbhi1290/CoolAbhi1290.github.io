@@ -62,5 +62,5 @@
     --white0-translucent0: rgba(255, 255, 255, 0.1);
     
     /* CSS constants */
-    --box-shadow0: 0px 0px 4px 0px var(--dark-blue0);
-}
+    --box-shadow0: 0px 0px 4px var(--dark-blue0);
+    --box-shadow0-inner: inset 0 0 4px var(--dark-blue0);

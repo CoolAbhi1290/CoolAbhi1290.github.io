@@ -7,6 +7,7 @@
 @import url("general.min.css");
 @import url("embeds.min.css");
 
-/* Aspects */
+/* Assets */
 @import url("texts.min.css");
 @import url("inputs.min.css");
+@import url("sections.css");
