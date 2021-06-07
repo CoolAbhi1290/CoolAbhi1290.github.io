@@ -5,5 +5,7 @@
     position: absolute;
     top: 0px;
     left: 0px;
+    -webkit-box-shadow: var(--box-shadow0);
+    -moz-box-shadow: var(--box-shadow0);
     box-shadow: var(--box-shadow0);
 }

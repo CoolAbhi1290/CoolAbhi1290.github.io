@@ -1,1 +1,1 @@
-*{transition-duration:var(--transition-duration0)}*:focus{outline:0;scroll-behavior:smooth}body{margin:40px 0 0 0}
+*{-webkit-transition-duration:var(--transition-duration0);-moz-transition-duration:var(--transition-duration0);-o-transition-duration:var(--transition-duration0);transition-duration:var(--transition-duration0)}*:focus{outline:0;scroll-behavior:smooth}body{padding:40px var(--distance-major) var(--distance-major) var(--distance-major);margin:0;background-color:var(--off-white1)}

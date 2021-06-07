@@ -1,0 +1,14 @@
+img {
+    margin: 0px;
+    padding: 0px;
+}
+
+img.full-width {
+    width: 100%;
+}
+
+img.rounded {
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    border-radius: var(--border-radius);
+}

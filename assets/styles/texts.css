@@ -2,12 +2,20 @@
     font-family: var(--font-family0);
 }
 
-p, a, i, b {
+p,
+a,
+i,
+b {
     font-size: var(--font-size-normal);
 }
 
-TEMP /* codeblock or something */ {
-    font-family: var(--font-family1);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: var(--distance-major) 0px var(--distance-major) 0px;
 }
 
 a {
@@ -15,6 +23,12 @@ a {
     font-weight: bold;
 }
 
-a.white {
-    color: white;
+a:not(.clean) {
+    background: var(--focus-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p {
+    margin: var(--distance-major-double) 0px var(--distance-major-double) 0px;
 }

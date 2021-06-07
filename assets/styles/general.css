@@ -1,4 +1,7 @@
 * {
+    -webkit-transition-duration: var(--transition-duration0);
+    -moz-transition-duration: var(--transition-duration0);
+    -o-transition-duration: var(--transition-duration0);
     transition-duration: var(--transition-duration0);
 }
 
@@ -8,5 +11,7 @@
 }
 
 body {
-    margin: 40px 0px 0px 0px;
+    padding: 40px var(--distance-major) var(--distance-major) var(--distance-major);
+    margin: 0px;
+    background-color: var(--off-white1);
 }

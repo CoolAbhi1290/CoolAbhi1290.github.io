@@ -13,6 +13,8 @@ button.clean {
 
 input {
     margin: 0px;
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
     border-radius: var(--border-radius);
     height: 30px;
     /* 32 (font-size + 20) - 1px border (two of 'em) */
@@ -21,6 +23,26 @@ input {
     font-weight: bold;
     padding: 0px 10px 0px 10px;
     font-weight: bold;
+}
+
+input::-webkit-input-placeholder {
+    font-weight: lighter;
+    color: white;
+}
+
+input:-moz-placeholder {
+    font-weight: lighter;
+    color: white;
+}
+
+input::-moz-placeholder {
+    font-weight: lighter;
+    color: white;
+}
+
+input:-ms-input-placeholder {
+    font-weight: lighter;
+    color: white;
 }
 
 input::placeholder {
