@@ -1,4 +1,4 @@
-.content-body {
+section.content-body {
     width: 100%;
     max-width: var(--max-width);
     background-color: white;
@@ -14,8 +14,10 @@
     box-shadow: var(--box-shadow0);
 }
 
-.hero-center {
+section.hero-center {
     width: 100%;
+    min-height: -webkit-calc(100% - var(--distance-major));
+    min-height: -moz-calc(100% - var(--distance-major));
     min-height: calc(100% - var(--distance-major));
     max-width: var(--max-width);
     background-position: center;
@@ -28,36 +30,73 @@
     -webkit-box-shadow: var(--box-shadow0);
     -moz-box-shadow: var(--box-shadow0);
     box-shadow: var(--box-shadow0);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
     align-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
     padding: var(--distance-sectioned);
 }
 
-.hero-center.contain {
+section.hero-center.contain {
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
     background-size: contain;
 }
 
-.hero-center.cover {
+section.hero-center.cover {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
 }
 
-.hero-center.scrolling-bg {
+section.hero-center.scrolling-bg {
     background-attachment: fixed;
+    -webkit-transform: unset;
+    -moz-transform: unset;
+    -ms-transform: unset;
+    -o-transform: unset;
     transform: unset;
 }
 
-.hero-center.full-width {
+section.hero-center.full-width {
     max-width: none;
 }
 
-.hero-center.half-height {
+section.hero-center.half-height {
+    min-height: -webkit-calc(50% - var(--distance-major));
+    min-height: -moz-calc(50% - var(--distance-major));
     min-height: calc(50% - var(--distance-major));
 }
 
-.content-body.blunt-start, .hero-center.blunt-start {
+section.centerize {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+section.content-body.blunt-start,
+section.hero-center.blunt-start {
     margin-top: var(--distance-major);
     -webkit-border-top-left-radius: var(--border-radius);
     -moz-border-radius-topleft: var(--border-radius);
@@ -67,7 +106,8 @@
     border-top-right-radius: var(--border-radius);
 }
 
-.content-body.blunt-end, .hero-center.blunt-end {
+section.content-body.blunt-end,
+section.hero-center.blunt-end {
     margin-top: var(--distance-major);
     -webkit-border-bottom-left-radius: var(--border-radius);
     -moz-border-radius-bottomleft: var(--border-radius);
@@ -75,4 +115,15 @@
     -webkit-border-bottom-right-radius: var(--border-radius);
     -moz-border-radius-bottomright: var(--border-radius);
     border-bottom-right-radius: var(--border-radius);
+}
+
+section.card-collection {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: var(--distance-major);
+    width: 100%;
+}
+
+div.card {
+    background-color: red;
 }

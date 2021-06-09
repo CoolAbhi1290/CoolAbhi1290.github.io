@@ -9,19 +9,19 @@
     --padding: 8px;
     --border-radius: 10px;
     --border-width: 2px;
-    
+
     /* Distances */
     --distance-minor: 5px;
     --distance-major: 10px;
     --distance-major-double: calc(var(--distance-major) * 2);
     --distance-sectioned: 40px;
-    
+
     --max-width: 600px;
-    
+
     /* Font sizes */
     --font-size0: 14px;
     --font-size1: 12px;
-    
+
     --font-size-h1: 64px;
     --font-size-h2: 56px;
     --font-size-h3: 48px;
