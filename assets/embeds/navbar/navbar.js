@@ -3,7 +3,8 @@ function windowOnload() {
     var searchBox = document.getElementById("search-box");
     var searchButton = document.getElementById("search-button");
 
-    searchButtonLink.removeAttribute("href");
+    // only remove link if search box can expand
+    windowResize();
     searchBox.style.display = "block";
 
     function attemptSearch(event) {
@@ -39,4 +40,15 @@ function windowOnload() {
     }
 }
 
+function windowResize(event) {
+    var searchButtonLink = document.getElementById("search-button-link");
+    
+    if (window.innerWidth < 360) {
+        searchButtonLink.setAttribute("href", "/search/");
+    } else {
+        searchButtonLink.removeAttribute("href");
+    }
+}
+
 window.onload = windowOnload;
+window.onresize = windowResize;

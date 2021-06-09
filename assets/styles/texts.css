@@ -18,6 +18,56 @@ h6 {
     margin: var(--distance-major) 0px var(--distance-major) 0px;
 }
 
+p.white,
+a.white,
+i.white,
+b.white,
+h1.white,
+h2.white,
+h3.white,
+h4.white,
+h5.white,
+h6.white {
+    color: white;
+}
+
+p.bold,
+a.bold,
+i.bold,
+b.bold,
+h1.bold,
+h2.bold,
+h3.bold,
+h4.bold,
+h5.bold,
+h6.bold {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: var(--font-size-h1);
+}
+
+h2 {
+    font-size: var(--font-size-h2);
+}
+
+h3 {
+    font-size: var(--font-size-h3);
+}
+
+h4 {
+    font-size: var(--font-size-h4);
+}
+
+h5 {
+    font-size: var(--font-size-h5);
+}
+
+h6 {
+    font-size: var(--font-size-h6);
+}
+
 a {
     text-decoration: none;
     font-weight: bold;

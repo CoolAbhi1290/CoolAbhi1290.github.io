@@ -5,16 +5,29 @@
 
     /* Constants */
     --transition-duration0: 0.2s;
-    --font-size0: 14px;
-    --font-size1: 12px;
     --depth0: 4px;
     --padding: 8px;
     --border-radius: 10px;
     --border-width: 2px;
+    
+    /* Distances */
     --distance-minor: 5px;
     --distance-major: 10px;
     --distance-major-double: calc(var(--distance-major) * 2);
+    --distance-sectioned: 40px;
+    
     --max-width: 600px;
+    
+    /* Font sizes */
+    --font-size0: 14px;
+    --font-size1: 12px;
+    
+    --font-size-h1: 64px;
+    --font-size-h2: 56px;
+    --font-size-h3: 48px;
+    --font-size-h4: 40px;
+    --font-size-h5: 32px;
+    --font-size-h6: 24px;
 
     /* Colors */
     --cyan0: #00b1ff;
